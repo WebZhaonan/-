@@ -25,22 +25,16 @@
     </style>
 </head>
 <body>
+
 <script>
     apiready = function () {
-        api.openSlidLayout({
-            type: 'left',
-            leftEdge: 60,
-            fixedPane: {
-                name: 'fixed',
-                url: 'html/fixed.html'
-            },
-            slidPane: {
-                name: 'slide',
-                url: 'html/slide.html'
-            }
-        }, function (ret) {
-
-        });
+      api.openWin({
+          name: 'index_win',
+          url: './html/index_win.html',
+          pageParam: {
+              name: 'test'
+          }
+      });
     }
 </script>
 </body>
